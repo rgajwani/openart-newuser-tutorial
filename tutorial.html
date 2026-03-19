@@ -112,10 +112,10 @@
       flex-shrink: 0;
     }
 
-    .nav-logo { order: 1; }
-    .nav-tracks { order: 2; }
-    .nav-search { order: 3; }
-    .nav-modules { order: 4; width: 100%; }
+    .nav-logo { order: 1; flex-shrink: 0; }
+    .nav-tracks { order: 2; flex-shrink: 0; }
+    .nav-search { order: 3; flex-shrink: 0; }
+    .nav-modules { order: 4; flex-basis: 100%; }
     .nav-progress { order: 5; }
 
     .nav-logo {
@@ -179,7 +179,7 @@
     .nav-modules {
       display: flex;
       gap: 8px;
-      flex: 1;
+      flex-wrap: wrap;
       min-width: 0;
     }
 
