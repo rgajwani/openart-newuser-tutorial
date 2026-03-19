@@ -112,23 +112,11 @@
       flex-shrink: 0;
     }
 
-    nav.top-nav > :nth-child(1) {
-      order: 1;
-    }
-
-    nav.top-nav > :nth-child(2) {
-      order: 2;
-    }
-
-    nav.top-nav > :nth-child(3) {
-      order: 3;
-      width: 100%;
-    }
-
-    nav.top-nav > :nth-child(4) {
-      order: 4;
-      width: 100%;
-    }
+    .nav-logo { order: 1; }
+    .nav-tracks { order: 2; }
+    .nav-search { order: 3; }
+    .nav-modules { order: 4; width: 100%; }
+    .nav-progress { order: 5; }
 
     .nav-logo {
       font-family: var(--font-heading);
@@ -1102,7 +1090,6 @@
       <div class="nav-tracks" id="nav-tracks">
         <button class="track-tab active" data-track="basics">
           The Basics
-          <span class="track-badge">Start Here</span>
         </button>
         <button class="track-tab" data-track="suite-ui">
           Suite UI
