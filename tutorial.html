@@ -288,7 +288,7 @@
     .left-pane {
       flex: 0 0 60%;
       overflow-y: auto;
-      border-right: 1px solid var(--border);
+      border-right: 1px solid #e0e0e0;
       display: flex;
       flex-direction: column;
       background-color: var(--left-pane-bg);
@@ -319,7 +319,7 @@
     .table-of-contents {
       padding: 24px;
       background-color: var(--left-pane-bg);
-      border-bottom: 1px solid var(--border);
+      border-bottom: 1px solid #e0e0e0;
       max-height: 300px;
       overflow-y: auto;
       transition: max-height 0.3s;
@@ -1039,7 +1039,7 @@
     }
 
     .left-pane ::-webkit-scrollbar-track {
-      background: var(--left-pane-bg);
+      background: #f5f5f5;
     }
 
     .left-pane ::-webkit-scrollbar-thumb {
@@ -1083,7 +1083,7 @@
         <div class="search-results" id="search-results"></div>
       </div>
 
-      <div class="nav-progress">
+      <div class="nav-progress" style="display:none;">
         <span id="progress-text">0/0</span>
         <div class="nav-progress-bar">
           <div class="nav-progress-fill" id="progress-bar"></div>
