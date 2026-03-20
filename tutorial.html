@@ -1091,8 +1091,8 @@
         <button class="track-tab active" data-track="basics">
           The Basics
         </button>
-        <button class="track-tab" data-track="suite-ui">
-          Suite UI
+        <button class="track-tab" data-track="openart-suite">
+          OpenArt Suite
         </button>
         <button class="track-tab" data-track="deep-dives">
           Deep Dives
@@ -1267,10 +1267,10 @@
         modules: () => window.TUTORIAL_CONTENT.modules,
         titles: ['From Idea to Reality', 'Transform With Emotion', 'Advanced Techniques', 'Mastering Quality']
       },
-      'suite-ui': {
+      'openart-suite': {
         modules: () => {
           if (window.EXPANDED_TRACKS && window.EXPANDED_TRACKS.tracks) {
-            const track = window.EXPANDED_TRACKS.tracks.find(t => t.id === 'suite-ui');
+            const track = window.EXPANDED_TRACKS.tracks.find(t => t.id === 'openart-suite');
             return track ? track.modules : [];
           }
           return [];
@@ -1644,7 +1644,7 @@
       if (state.currentTrack === 'basics') {
         const disclaimer = document.createElement('p');
         disclaimer.style.cssText = 'font-style: italic; color: var(--left-pane-text-secondary); font-size: 0.85em; background: #f5f5f0; border-left: 3px solid #ccc; padding: 12px 16px; margin: 0 0 2em 0; border-radius: 0 4px 4px 0;';
-        disclaimer.innerHTML = 'Note: OpenArt launched "OpenArt Suite" with a new UI in March 2026. The content in this section will teach you The Basics, but the UI will look slightly different. For a walk-through on the new OpenArt Suite, select the <a href="#" style="color: var(--green); text-decoration: underline;" onclick="event.preventDefault(); switchTrack(\'suite-ui\');">"Suite UI" learning track</a>.';
+        disclaimer.innerHTML = 'Note: OpenArt launched "OpenArt Suite" with a new UI in March 2026. The content in this section will teach you The Basics, but the UI will look slightly different. For a walk-through on the new OpenArt Suite, select the <a href="#" style="color: var(--green); text-decoration: underline;" onclick="event.preventDefault(); switchTrack(\'openart-suite\');">"OpenArt Suite" learning track</a>.';
         content.appendChild(disclaimer);
       }
 

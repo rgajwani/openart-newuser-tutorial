@@ -8,8 +8,8 @@ window.EXPANDED_TRACKS = {
       modules: null
     },
     {
-      id: "suite-ui",
-      title: "OpenArt Suite UI",
+      id: "openart-suite",
+      title: "OpenArt Suite",
       description: "Learn the new OpenArt Suite interface with characters, worlds, and assets.",
       modules: [
         {
