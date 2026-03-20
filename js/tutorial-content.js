@@ -32,7 +32,7 @@ window.TUTORIAL_CONTENT = {
           id: "m1-overview",
           title: "Overview of OpenArt",
           timeStart: 166,
-          content: `<p>We're putting you in an ideal moment of 2026, so you need to get yourself into an image first. We're using the <strong>OpenArt</strong> platform (openart.ai) — a complete creative toolkit with everything you need.</p>
+          content: `<p>For this tutorial project, we're going to create an AI video that features <em>you</em> as the main character. We're using the <strong>OpenArt</strong> platform (openart.ai) — a complete creative toolkit with everything you need.</p>
 
 <p>OpenArt includes:</p>
 
