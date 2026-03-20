@@ -12,11 +12,11 @@ window.TUTORIAL_CONTENT = {
           id: "m1-intro",
           title: "Introduction & Course Overview",
           timeStart: 0,
-          content: `<p>Welcome to <strong>Dream Big With AI</strong>, a beginner-friendly 4-part course designed specifically for anyone with zero AI experience. Whether you've never touched an AI tool before or you're curious about what's possible, this course is for you.</p>
+          content: `<p>Welcome to <strong>Dream Big With AI</strong>, a beginner-friendly 4-part course designed specifically for anyone with zero AI experience. Whether you've never touched an AI tool before or you're curious about what's possible, you are in the right place.</p>
 
-<p>The goal of this entire course is beautifully simple: <strong>create one visual moment from your future for 2026</strong>. By the end of Module 4, you'll have transformed a personal vision into a professional-quality video using AI. That's the journey ahead.</p>
+<p>The goal of this entire course is beautifully simple: <strong>create one of your personal ideal moments for 2026</strong>. Now, that may sound a little New Year's resolution cliché, but you're actually going to learn some really important concepts when it comes to creating with AI. By the end of Module 4, you'll have transformed a personal vision into a professional-quality video. That's the journey ahead.</p>
 
-<p>Here's what we'll cover:</p>
+<p>Here's what we'll cover across four modules:</p>
 <ul>
 <li><strong>Module 1:</strong> Learn to create custom images with AI prompts and reference photos</li>
 <li><strong>Module 2:</strong> Master emotion and expression — bring your images to life with feeling</li>
@@ -24,28 +24,30 @@ window.TUTORIAL_CONTENT = {
 <li><strong>Module 4:</strong> Bring it all together into a complete 2026 Moment Video</li>
 </ul>
 
-<p>No special skills required. No art degree needed. Just creativity, curiosity, and willingness to experiment. Let's dive in.</p>`
+<p>If you are a person who has been striving to express their creativity — even though you may not have any particular artistic talent — then AI is your dream come true. AI levels the playing field. It gives everybody an opportunity to express what's inside them, without judgment, without permission, and without worrying if you're good enough or whether you have the technical skills.</p>
+
+<p>These four modules focus way more on results and doing things rather than theory. All of that you can learn later if you decide you want to. For now, let's just have some fun and create some stuff.</p>`
         },
         {
           id: "m1-overview",
           title: "Overview of OpenArt",
           timeStart: 166,
-          content: `<p>Let's talk about the platform we'll be using: <strong>OpenArt</strong> (openart.ai).</p>
+          content: `<p>Because this project is all about putting you in some ideal moment of 2026, we have to start with getting you into the picture. There are many places online where you can implement the concepts we're going to teach you, but today we're using the <strong>OpenArt</strong> platform (openart.ai).</p>
 
-<p>OpenArt isn't just an image generator. It's a full creative suite purpose-built for creators. Here's what you get inside the platform:</p>
+<p>OpenArt isn't just an image generator — as a creator, it is the perfect playground. Every tool you can possibly imagine that you would need to create your AI cinematic masterpiece is here, including:</p>
 
 <ul>
 <li><strong>Image Generation:</strong> Create custom images from text prompts</li>
 <li><strong>Video Generation:</strong> Transform images into videos or generate video from text</li>
-<li><strong>Story Maker:</strong> Build narrative sequences</li>
-<li><strong>Audio Tools:</strong> Generate and manipulate audio</li>
-<li><strong>Voice Cloning:</strong> Clone your own voice or create new voices</li>
-<li><strong>Lip-Sync:</strong> Sync animations with audio</li>
+<li><strong>Story Maker:</strong> Create music videos, explainer vlogs, and tell your stories in different, more advanced ways</li>
+<li><strong>Audio Tools:</strong> Voice cloning and lip-sync to match your character with specific things you're saying</li>
 </ul>
 
-<p>This integrated ecosystem means you can create a complete end-to-end experience without bouncing between five different platforms. By the end of this course, you'll have used most of these tools to tell your story.</p>
+<p>Because we're keeping this course super simple, we're not going to be touching those more advanced tools — but it's good to know they are there for when you're ready.</p>
 
-<p>For right now, let's focus on the foundation: <strong>image generation</strong>. Master this, and everything else becomes an extension of what you already know.</p>`
+<p>One important note: even though we're using OpenArt as an example here, the interface may look different by the time you try it. That's fine — as long as you understand the basic concepts of image and video creation, you'll be able to work with whatever the interface looks like.</p>
+
+<p>This module is going to focus on the very simple process of getting you in an image and allowing you to prompt yourself in different situations. For right now, let's focus on the foundation: <strong>image generation</strong>. Master this, and everything else becomes an extension of what you already know.</p>`
         },
         {
           id: "m1-getting-started",
@@ -53,184 +55,132 @@ window.TUTORIAL_CONTENT = {
           timeStart: 248,
           content: `<p>Let's create your first AI image. Open OpenArt and follow along.</p>
 
-<p><strong>Step 1: Start a New Image</strong></p>
-<p>From the main dashboard, click the <strong>"Create Image"</strong> button. You'll land in the image creation workspace.</p>
+<p><strong>Step 1: Navigate to Image Creation</strong></p>
+<p>On the OpenArt site, hover over where it says <strong>Image</strong> and then click on <strong>Create Image</strong>. You'll be presented with your previously created images (if any), and the image creation workspace where all the magic happens.</p>
 
-<p><strong>Step 2: Select Your Model</strong></p>
-<p>You'll see a dropdown asking which AI model you want to use. For this course, we recommend <strong>Seedream 4.5</strong>. Why? Because it excels at facial consistency and keeps your face looking like <em>you</em> across multiple images. This matters when we're building a narrative with your face as the hero.</p>
+<p>There are lots of settings here that we're not going to talk about right now because they're a little more advanced and not necessary for the project we're doing. What we're concerned with is getting your picture in there and then telling AI what we want to do with that picture.</p>
 
-<p>Different models have different strengths. Some are better at landscapes, others at abstract art. We're starting with Seedream 4.5 because it's the most reliable for personal portraiture.</p>
+<p><strong>Step 2: Understand AI Models</strong></p>
+<p>When we say we're telling AI what to do with the picture, we're actually talking to what's called a <strong>model</strong>. If you click under <strong>Model</strong> (or <strong>Character</strong>), you'll see there are a lot of models to choose from, each with different specialties — maybe a particular look, or special superpowers.</p>
+
+<p>There's a whole newer generation of AI models that don't make you rely just on prompting. You can actually use what are called <strong>reference images</strong> to tell the model exactly how you want the image to look. In this case, we're going to put pictures of ourselves in there so it knows to use our likeness in the image. The number of models that have this feature is growing all the time.</p>
+
+<p>For this demo, we're using <strong>Seedream 4.5</strong> because it does the best job at keeping your face consistent in all of your images — and that's really important if you're going to believe, or ask anyone else to believe, that these images are real.</p>
 
 <p><strong>Step 3: Upload a Reference Image</strong></p>
-<p>Next, you'll have the option to upload a reference image. This is optional for now, but it's incredibly powerful. Your reference image tells OpenArt: <em>"This is who I want in the image."</em></p>
+<p>Here's where we're going to drag up to <strong>14 images</strong> for reference. For now, we just need one good image of ourselves — forward-facing, with our face looking how we want it to look in all of the images we're going to create.</p>
 
-<p>What makes a good reference image?</p>
-<ul>
-<li>Your face is <strong>forward-facing</strong> (looking at the camera)</li>
-<li>The image is <strong>well-lit</strong> — you can see facial details clearly</li>
-<li>Simple background is fine — OpenArt will replace it anyway</li>
-<li>A recent photo is ideal</li>
-</ul>
-
-<p>Pro tip: You can upload up to 14 reference images. For now, just upload one good photo of yourself. Drag and drop works great.</p>`
+<p>To upload, just click in the reference area and select a file, or simply <strong>drag an image from your computer and drop it right on the box</strong>. That's all you need to do.</p>`
         },
         {
           id: "m1-prompting",
           title: "Basic Prompting & Aspect Ratio",
           timeStart: 388,
-          content: `<p>Now for the magic part: <strong>the prompt</strong>. This is your creative instruction to the AI.</p>
+          content: `<p>Now for the magic part: <strong>the prompt</strong>. All we need to tell the model is who is it, where are they, and what are they doing.</p>
 
-<p>The best prompts follow a simple formula:</p>
 <ul>
 <li><strong>WHO:</strong> Who is in the image?</li>
 <li><strong>WHERE:</strong> Where are they?</li>
 <li><strong>WHAT:</strong> What are they doing?</li>
 </ul>
 
-<p>Here's an example prompt from the video: <em>"The man is outside a nightclub sitting on a blue and purple sports car."</em></p>
+<p>Here's an example: <em>"The man is outside a nightclub sitting on a blue and purple sports car."</em></p>
 
-<p>Notice how it answers all three questions:</p>
-<ul>
-<li>WHO: "the man" (that's you, from the reference image)</li>
-<li>WHERE: "outside a nightclub"</li>
-<li>WHAT: "sitting on a blue and purple sports car"</li>
-</ul>
+<p>Notice how simple that is — who he is, where he is, and what he's doing. We didn't specify a car make or model; just "blue and purple sports car" was enough to get stunning results. You can be as specific or as vague as you want.</p>
 
 <p><strong>Output Settings</strong></p>
-<p>Before you generate, adjust these settings:</p>
+<p>If you scroll down, you'll see the output settings:</p>
 <ul>
-<li><strong>Aspect Ratio:</strong> Choose "16:9 Widescreen" if you plan to turn this into a video later. Square is fine for social media. Choose based on your end goal.</li>
-<li><strong>Number of Images:</strong> Start with 4. This gives you options without taking forever to generate.</li>
-<li><strong>Resolution:</strong> Higher resolution = longer wait time. Standard is fine for testing prompts.</li>
+<li><strong>Aspect Ratio:</strong> For full-screen video, choose <strong>Widescreen</strong>. Square works for social media.</li>
+<li><strong>Number of Images:</strong> Set to <strong>4</strong> so you get multiple variations to choose from.</li>
+<li><strong>Resolution:</strong> Leave it at <strong>2K</strong> — that's a good default for quality without huge file sizes.</li>
 </ul>
 
 <p><strong>Generate!</strong></p>
-<p>Click Create and wait approximately 30 seconds. The AI is working hard to understand your vision and bring it to life.</p>
+<p>Click <strong>Create</strong>. On OpenArt, it's pretty fast — just a few seconds. You'll see your results appear with your face, your expression, and the scene you described.</p>
 
-<p><a href="#" class="video-link" data-module="1" data-time="248">▶ Watch Getting Started (4:08)</a></p>`
+<p><strong>Iterating on Your Prompt</strong></p>
+<p>Once you see the first results, you can easily refine. For example, you could add <em>"wearing a blue and purple tuxedo"</em> to the prompt and click Create again. Now you'll get four completely new images — different positions from the first set, but the same idea — and the model still maintains your facial likeness perfectly from image to image.</p>`
         },
         {
           id: "m1-reference",
           title: "Using Reference Images Effectively",
           timeStart: 356,
-          content: `<p>Reference images are one of the most powerful features in OpenArt. Let's dive deeper into how to use them strategically.</p>
+          content: `<p>Reference images are one of the most powerful features in OpenArt. Now that we have an image uploaded as a reference, the AI model knows what we look like and will incorporate our likeness into every image we generate.</p>
 
-<p><strong>Why Use Reference Images?</strong></p>
-<p>When you upload a photo of yourself, you're essentially saying: <em>"This person is the star of my image."</em> The AI learns your facial features and maintains consistency. This is critical when you're building a narrative that spans multiple images.</p>
+<p><strong>Building a Reference Image Library</strong></p>
+<p>A great tip from the video: keep a directory of headshots that you commonly use. In the demo, Bob shows that he maintains a collection with photos of his wife Tracy, his assistant Presley, a few different versions of himself, their daughter Amber — and even a picture of himself from sixth grade. Think of the possibilities!</p>
 
-<p><strong>How to Upload</strong></p>
-<p>In the reference section, simply drag and drop your image. You'll see a preview. The AI analyzes it and gets ready to incorporate it into your generations.</p>
+<p><strong>Why Different References Matter</strong></p>
+<p>Different reference photos give you completely different looks. You might have different makeup styles you like, or maybe sometimes you wear a beard and sometimes you don't. Just choose the appropriate reference image and all of your generated images will match that look. You can always add emotions in the prompt itself — we'll cover that in Module 2.</p>
 
 <p><strong>Optimal Reference Photos</strong></p>
 <p>The best reference images have these qualities:</p>
 <ul>
-<li><strong>Good lighting:</strong> Natural window light or soft studio lighting. Avoid harsh shadows on your face.</li>
-<li><strong>Clear view of your face:</strong> No sunglasses, hats, or heavy obstruction. Forward-facing is ideal.</li>
-<li><strong>Neutral or pleasant expression:</strong> You can always add emotions in the prompt itself.</li>
-<li><strong>Simple background:</strong> It gets replaced anyway, so don't stress about it.</li>
+<li><strong>Forward-facing:</strong> Your face looking at the camera gives the model the clearest data</li>
+<li><strong>Good lighting:</strong> Make sure your face is clearly visible</li>
+<li><strong>How you want to look:</strong> The expression and styling in your reference will carry through to your generated images</li>
 </ul>
 
-<p>Remember: you can upload multiple reference images (up to 14). You might use one for most generations, but having backups is useful if you get results you're unhappy with.</p>
-
-<p><a href="#" class="video-link" data-module="1" data-time="356">▶ Watch Reference Images (5:56)</a></p>`
+<p>Remember: you can upload up to 14 reference images (we'll explain why you'd want more in Module 2). For now, just one good photo is all you need.</p>`
         },
         {
           id: "m1-nano-banana",
           title: "Testing Different Models: Seedream vs. Nano Banana Pro",
           timeStart: 490,
-          content: `<p>One of the best ways to understand what AI can do is to test different models with the same prompt. This is where <strong>Nano Banana Pro</strong> comes in.</p>
+          content: `<p>So far we've been using exclusively the <strong>Seedream 4.5</strong> image model because it's the personal favorite in this course and does the best job on consistency. But there are other great models out there that do similar things. One such model you may have heard about is called <strong>Nano Banana Pro</strong>.</p>
 
-<p><strong>Why Compare Models?</strong></p>
-<p>Different AI models were trained on different data and optimized for different outcomes. Seedream 4.5 might excel at photorealism, while Nano Banana Pro might excel at stylized art. By seeing both results, you understand:</p>
-<ul>
-<li>How models interpret prompts differently</li>
-<li>Which model matches your creative vision</li>
-<li>The variety available in your toolkit</li>
-</ul>
+<p><strong>How to Test a Different Model</strong></p>
+<p>We can test very easily: just click any of the images you want to run with a different model. From there, click <strong>"Reuse Settings"</strong> — that's going to load the original prompt, the original reference image, and the original model. Now switch the model to <strong>Nano Banana Pro</strong>, make sure your widescreen and number of images are set, and click Create.</p>
 
-<p><strong>How to Test</strong></p>
-<p>After you generate images with Seedream 4.5, OpenArt shows a button: <strong>"Reuse Settings."</strong> Click it, then change the model dropdown to <strong>Nano Banana Pro</strong>. Keep the same prompt, same reference image, same settings. Hit Create again.</p>
+<p><strong>Comparing Results</strong></p>
+<p>With Nano Banana Pro, you'll get an entirely different artistic imagining — a different tuxedo, a different car. But you might notice the face is more stylized than realistic. Some of the output may be distorted, and it just doesn't consistently give the face you want. As Bob puts it: "This looks more like a relative of mine than it does of me."</p>
 
-<p>Now compare the results side-by-side. You might notice:</p>
-<ul>
-<li>Different color palettes</li>
-<li>Different visual styles (more stylized vs. photorealistic)</li>
-<li>Variations in facial consistency (this varies model-to-model)</li>
-</ul>
-
-<p>There's no "best" model — only the best model for <em>your</em> vision. This module uses Seedream 4.5 for consistency, but don't be afraid to experiment.</p>
-
-<p><a href="#" class="video-link" data-module="1" data-time="490">▶ Watch Nano Banana Pro (8:10)</a></p>`
+<p>And that's why the course uses Seedream 4.5 — but <strong>you can choose whatever you'd like</strong>. Try all the models and see which results appeal to your sensibilities the most. There's no single "best" model — only the best model for <em>your</em> vision and <em>your</em> face.</p>`
         },
         {
           id: "m1-locations",
           title: "Changing Locations & Camera Instructions",
           timeStart: 551,
-          content: `<p>Here's where AI image generation becomes incredibly fun: <strong>you can place yourself anywhere</strong>. On the moon. In a castle. In a concert hall. Literally anywhere your imagination takes you.</p>
+          content: `<p>Let's change our locations and do something else. Here's how easy it is to put yourself wherever, doing whatever.</p>
 
-<p><strong>The Simple Way: Change One Word</strong></p>
-<p>Start with a base prompt like: <em>"The man is outside a nightclub sitting on a blue and purple sports car."</em></p>
+<p><strong>Example 1: On Stage with a Band</strong></p>
+<p>New prompt: <em>"The man is on stage with a five-piece band playing the ukulele as the front man."</em> Leaving all the other settings the same and clicking Create — and just like that, you've got a band. Your face, including the facial expression, stays the same in every single one. (We'll deal with facial expression and emotion in Module 2.)</p>
 
-<p>Now, keep everything the same but change the location. Try: <em>"The man is on stage with a five-piece band playing the ukulele."</em></p>
-
-<p>Same person. Same situation. Completely different scene. The power of location switching is that it builds variety while maintaining your consistent presence.</p>
-
-<p><strong>Advanced: Camera Instructions</strong></p>
-<p>You can get even more specific with <strong>camera direction</strong>. Give the AI framing advice:</p>
+<p><strong>Example 2: Camera Instructions</strong></p>
+<p>Most models give you the ability to add basic camera instructions like close-ups, wide shots, and medium shots. So let's add a little more detail to the prompt this time:</p>
 
 <p><em>"Close-up of the man in the snowy woods sipping hot cocoa while sitting on the back deck of a log cabin wearing a cozy parka."</em></p>
 
-<p>Notice the additional layers:</p>
-<ul>
-<li><strong>Camera angle:</strong> "Close-up" (tells it framing)</li>
-<li><strong>Location:</strong> "snowy woods," "log cabin"</li>
-<li><strong>Action:</strong> "sipping hot cocoa"</li>
-<li><strong>Clothing:</strong> "cozy parka" (builds mood)</li>
-</ul>
+<p>In just a few seconds, you've got four images of yourself enjoying hot cocoa on a snowy cabin deck. This is the kind of moment you might like to see for yourself in 2026.</p>
 
-<p>The more specific you are, the more control you have. But also remember: some vagueness invites creativity. You don't need every detail.</p>
+<p><strong>Changing Camera Angle with One Word</strong></p>
+<p>Now try changing just <em>"close-up"</em> to <em>"wide shot"</em> in the same prompt. The camera pulls back, giving a better view of the surroundings — all while still adhering to the prompt instruction of you sipping hot cocoa on the back deck wearing a parka. One word changed, completely different composition.</p>
 
-<p><a href="#" class="video-link" data-module="1" data-time="551">▶ Watch Changing Locations (9:11)</a></p>`
+<p>There is no complicated rocket science, no technical prompt magic you need to know. You just need to be able to say: I want this person, doing that thing, over there.</p>`
         },
         {
           id: "m1-homework",
           title: "Module 1 Homework: Your First Images",
           timeStart: 614,
-          content: `<p>You've learned the mechanics. Now it's time to create. Here's your homework for Module 1.</p>
+          content: `<p>That simple process is all we want you to do for your first round of homework. Super simple.</p>
 
-<p><strong>Assignment: Generate Your First 2026 Moment Images</strong></p>
+<p><strong>Your Assignment:</strong></p>
+<p>Just use OpenArt where you can access a model like Seedream, drag in a reference image, give it a prompt, and before you go on to Module 2, <strong>generate at least three different images of yourself in different places and locations</strong> that are interesting to you.</p>
 
-<p>Think about a moment from your future — specifically, 2026. Maybe it's:</p>
+<p><strong>Experiment freely:</strong></p>
 <ul>
-<li>You accepting an award on stage</li>
-<li>You relaxing on a beach somewhere exotic</li>
-<li>You achieving a personal goal you're working toward</li>
-<li>You with people you love in a place you dream of</li>
-<li>You mastering a skill you want to develop</li>
+<li>Don't be afraid to play around with prompts and try different things</li>
+<li>Try different clothing, different lighting — try it all</li>
+<li><strong>You can't break it.</strong> You can either be happy with the results or you're not</li>
+<li>After a while, you'll find the prompts that stretch the limits and the ones that really work well</li>
 </ul>
 
-<p><strong>Your Task:</strong></p>
-<ol>
-<li>Upload a clear reference photo of yourself to OpenArt</li>
-<li>Write at least 3 different prompts using the WHO/WHERE/WHAT formula</li>
-<li>Generate at least 3 images total (4 images per prompt is fine)</li>
-<li>Experiment with different locations, clothing, and camera angles</li>
-<li>Save your favorite results</li>
-</ol>
-
-<p><strong>Tips for Success:</strong></p>
-<ul>
-<li>Don't overthink it. Your first prompt doesn't have to be perfect.</li>
-<li>Generate multiple versions. Iterate. Refine.</li>
-<li>Try different models if you're curious (use Reuse Settings)</li>
-<li>Pay attention to what works and what doesn't — you'll learn faster this way</li>
-<li>Have fun with it. This isn't about being "good" at AI; it's about exploring what's possible</li>
-</ul>
+<p><strong>Play with Reference Images Too:</strong></p>
+<p>Don't be afraid to try different reference images. You can give yourself completely different looks by just using different photos. You might have different makeup styles you like, or maybe sometimes you wear a beard and sometimes you don't. Just choose the appropriate reference image and then all of your images will look exactly how you want them to look.</p>
 
 <p><strong>What's Next?</strong></p>
-<p>In Module 2, we're going to take these images and infuse them with emotion and expression. You'll learn how to capture feeling, not just appearance. But first, do this homework. Create something that excites you.</p>
-
-<p><a href="#" class="video-link" data-module="1" data-time="614">▶ Watch Homework (10:14)</a></p>`
+<p>In the next module, we're going to work on adding layers of <strong>emotional expression</strong> and personalizing these images and future videos even more by using additional reference images and bringing in <strong>items and people and locations from your real life</strong>. Until then, have fun creating!</p>`
         }
       ]
     },
