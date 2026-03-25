@@ -435,8 +435,10 @@ window.TUTORIAL_CONTENT = {
           timeStart: 195,
           content: `<p>Create your first video using Image to Video with start and end frames.</p>
 
+<p><em><strong>Note:</strong> "Image to Video" has been renamed "Frame to Video" in the updated OpenArt interface (early 2026). The steps below still apply — just look for "Frame to Video" in the menu.</em></p>
+
 <p><strong>Step 1: Navigate to Video Tools</strong></p>
-<p>Click <strong>Video > Image to Video</strong>.</p>
+<p>Click <strong>Video > Image to Video</strong> (now called <strong>Frame to Video</strong>).</p>
 
 <p><strong>Step 2: Upload Start Frame</strong></p>
 <p>Upload your Module 2 "before" emotional image.</p>
@@ -648,6 +650,8 @@ window.TUTORIAL_CONTENT = {
           title: "Working With Image to Video at Scale",
           timeStart: 107,
           content: `<p>Create multiple videos using the image-to-video process from Module 3, at scale.</p>
+
+<p><em><strong>Note:</strong> "Image to Video" has been renamed "Frame to Video" in the updated OpenArt interface (early 2026).</em></p>
 
 <p><strong>The Process</strong></p>
 <p>Pick your best Module 1 images, pair them with Module 2 emotional transformations, and create videos from the transitions.</p>
