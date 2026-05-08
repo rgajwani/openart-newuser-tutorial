@@ -1,0 +1,12 @@
+# Render Blueprint — declares the openart-tutorial.onrender.com static site.
+# Docs: https://render.com/docs/blueprint-spec
+services:
+  - type: web
+    runtime: static
+    name: openart-tutorial
+    repo: https://github.com/rgajwani/openart-newuser-tutorial
+    branch: main
+    staticPublishPath: ./
+    autoDeploy: true
+    pullRequestPreviewsEnabled: false
+    buildCommand: ""
