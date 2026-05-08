@@ -497,6 +497,76 @@ window.EXPANDED_TRACKS = {
 <p><strong>Content strategy:</strong> Create 10-15 different selfie sequences of your character: happy, sad, confused, excited, skeptical, thinking, laughing, etc. Each is a 2-3 second loop that can be infinitely repeated or composed with music for short-form content. This library becomes endlessly reusable content generation infrastructure.</p>`
             }
           ]
+        },
+        {
+          id: 6,
+          title: "Smart Shot",
+          videoFile: "videos/smart-shot-h264.mp4",
+          youtubeId: "4d-Uh1TKwqY",
+          duration: "5:46",
+          description: "Generate a complete cinematic scene from a single text prompt. Master the Shot Plan, character & environment references, and how to chain Smart Shots into longer sequences.",
+          sections: [
+            {
+              id: "ss-intro",
+              title: "What Is Smart Shot?",
+              timeStart: 0,
+              content: `<p><strong>Smart Shot turns a single text prompt into a complete cinematic scene.</strong> Where most AI video tools generate one continuous clip, Smart Shot produces a multi-cut sequence with character references, environment floor plans, lens choices, camera moves, mood notes, and a color palette — a full storyboard from one idea. It's OpenArt's answer to the gap between "I have a vision" and "I can describe every shot a director would ask for."</p>
+<p>The magic is that Smart Shot doesn't just parse your words — it interprets your intent. Type "a product ad for running shoes called Swifts" and the system stages a runner's competition, frames the start line tension, picks lenses, and times the cuts. You don't need to be a filmmaker to get filmmaker-quality output. The idea is enough.</p>
+<p>The default output is roughly a 15-second sequence of about five distinct cuts. Underneath, Seedance 2.0 animates the final video directly from the storyboard, which is why characters stay on-model across cuts, compositions hold, and camera moves land where they were planned. Think of Smart Shot as your AI cinematographer, storyboard artist, and editor in one click.</p>`
+            },
+            {
+              id: "ss-launching",
+              title: "Launching Smart Shot",
+              timeStart: 32,
+              content: `<p><strong>Find Smart Shot under the Video tools on your OpenArt home page.</strong> Click <strong>Video</strong>, then select <strong>Smart Shot</strong> from the new options. The interface shows a single prompt box plus optional reference slots — the whole feature is built around keeping the input simple.</p>
+<p>You can bring in <strong>up to two characters</strong> and <strong>one environment</strong> from your saved OpenArt assets. If you've already designed your protagonist or built a world, attach them here and Smart Shot will hold them consistent across every cut. For first-timers or quick concepts, skip the references entirely and let the system invent everything from the prompt alone.</p>
+<p><strong>Pro tip:</strong> If you're planning a series — a brand campaign, a recurring character on social, a multi-episode short — invest the time to build proper Character and World assets first. Smart Shot's reference slots are how those investments compound: every Smart Shot you run with the same references automatically reuses the same protagonist and world.</p>`
+            },
+            {
+              id: "ss-prompting",
+              title: "Prompting With Just an Idea",
+              timeStart: 45,
+              content: `<p><strong>Smart Shot is built for prompts that read like film pitches, not shot lists.</strong> A typical AI video prompt forces you to describe action, camera angle, lighting, and pacing — knowledge most non-filmmakers don't have. Smart Shot inverts the problem: tell it the idea, and the system fills in the cinematography.</p>
+<p>The demo prompt is just <em>"a product ad for running shoes called Swifts."</em> That's the entire input. From those eight words, Smart Shot stages a competition, casts the scene (including a cheetah and a sports car at the start line as interpretive flourishes), chooses lenses for each cut, sets the mood, and writes a hero voiceover. You can be more specific when you have a clearer vision — but you don't have to be.</p>
+<p><strong>Output settings to set before generating:</strong> Choose your <strong>aspect ratio</strong> from the standard set (vertical, square, widescreen) and pick a <strong>resolution between 480p and 1080p</strong>. For storyboard quality, <strong>medium</strong> works fine, but <strong>high</strong> is recommended — the shot sheet contains a lot of text and visual detail you'll want to read clearly when reviewing each cut.</p>
+<p><strong>Pro technique:</strong> Lead with the <em>kind</em> of scene you want before the specifics — "a product ad," "a vlog moment," "a music video opener," "a documentary establishing shot." Smart Shot's interpretation hinges on genre cues, and naming the genre up front gives the system the clearest signal about pacing, lensing, and mood.</p>`
+            },
+            {
+              id: "ss-shot-plan",
+              title: "Previewing the Shot Plan",
+              timeStart: 83,
+              content: `<p><strong>Before you generate the video, click <strong>Preview Sheet</strong> to inspect the full shot plan.</strong> This is the single biggest reason Smart Shot is different from one-prompt video tools — you get to see and refine the storyboard before any frames render.</p>
+<p>The sheet contains: a <strong>character sheet</strong> (each character's reference look), an <strong>environment floor plan</strong>, and <strong>five frames</strong> — one per cut — each annotated with lens choice, camera move, mood note, and color palette. What would have been five separate image generations and an evening of director's notes arrives in a single pass.</p>
+<p>Read each cut as a director would: <em>Cut 1 — 40mm wide shot of all three at the line, holding tension before the gun. Cut 3 — 100mm macro insert of the shoes the moment they fire. Cut 5 — 50mm crane-up wide shot of the runner crossing the finish line.</em> Smart Shot isn't just generating stills; it's composing a sequence with intentional lens grammar and emotional pacing.</p>
+<p><strong>Pro tip:</strong> The Preview Sheet is your editing surface. If a cut's mood is off, the lens feels wrong, or the color doesn't match your brand, refine it here — not after the final video is rendered. Generation is expensive; sheet refinement is fast.</p>`
+            },
+            {
+              id: "ss-generating",
+              title: "Generating the Final Video",
+              timeStart: 155,
+              content: `<p><strong>Once the sheet looks right, click <strong>Generate</strong> and Smart Shot writes the full cinematic prompt for you, automatically.</strong> The system translates the storyboard into the kind of dense, structured language video models respond best to — the prompt you'd write if you knew exactly what to ask for.</p>
+<p>The final render is produced by <strong>Seedance 2.0</strong> animating directly from the storyboard sheet. This is why characters stay on-model across cuts (the same reference flows through every shot), compositions hold (the framing comes from the sheet, not a fresh interpretation), and camera moves land where they were planned (lenses and motion are pre-decided, not improvised).</p>
+<p>The output is a single video clip with all five cuts edited together — typically about 15 seconds. The voiceover, when the prompt implies one (like a product ad), is generated alongside: <em>"Three legends, one moment. Power, precision, instinct unleashed. He breaks through first — victory earned at the line. There is no finish, only what's next."</em></p>
+<p><strong>One prompt. One sheet. One click. Five shots.</strong> That's the pitch — and once you've watched it work end-to-end, it's hard to un-see how much manual director-work used to sit between idea and finished video.</p>`
+            },
+            {
+              id: "ss-extending",
+              title: "Extending Beyond 15 Seconds",
+              timeStart: 198,
+              content: `<p><strong>15 seconds isn't a long time. To stretch a Smart Shot scene into 30 seconds, a minute, or longer, continue the sequence by referencing your initial sheet.</strong></p>
+<p>The workflow: take the storyboard sheet from your first Smart Shot, attach it as a reference in a new Smart Shot prompt by clicking <strong>@</strong> in the prompt box, then prompt as if you're continuing the scene — <em>"continue from image one and further develop the story of her putting on beachwear and heading to the beach."</em> The system generates a second storyboard sheet that picks up where the first ended, with the same character and environment carried forward.</p>
+<p>Generate the second video, then in post-production stitch the two clips together on a timeline. Now you have a 30-second sequence where character, wardrobe, lighting, and world stay consistent across both halves — what would have been four disconnected generations with mismatched details becomes one continuous scene.</p>
+<p><strong>Pro technique:</strong> For longer narratives, generate sheets sequentially, each referencing the last. A vlog might go: hotel room arrival → outfit change → hotel pool → restaurant → night-out montage. Each Smart Shot is roughly 15 seconds; chained together, you have a multi-minute story with consistent characters and environments throughout. This is the difference between "generating clips" and "making a film."</p>`
+            },
+            {
+              id: "ss-unlock",
+              title: "Sequences, Chapters & Stories",
+              timeStart: 289,
+              content: `<p><strong>The unlock of Smart Shot isn't single scenes — it's sequences, chapters, and whole stories.</strong> Once you internalize that one prompt yields a 5-cut storyboard, and that storyboards can chain, the unit of creative output stops being "the clip" and starts being "the narrative."</p>
+<p>The same character, environment, and world carry forward across as many Smart Shots as you want to chain. A 30-second product ad, a 1-minute brand spot, a 3-minute short film — all of them assemblable from sheet-driven 15-second blocks that maintain visual consistency throughout. You're not generating disconnected images that happen to look similar; you're directing a coherent piece.</p>
+<p><strong>Where Smart Shot fits in your workflow:</strong> Use it for product ads, short-form social content (TikTok, Reels, Shorts), pre-visualization for longer projects, AI influencer content where character consistency is the entire game, and any narrative format where you want filmmaker-grade pacing without filmmaker-grade time investment. One prompt, one sheet, one click — five shots, no learning curve.</p>`
+            }
+          ]
         }
       ]
     },
